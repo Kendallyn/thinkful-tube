@@ -11,8 +11,8 @@ $(document).ready(function () {
                 part: "snippet",
                 key: "AIzaSyDagHnmN5lCNiJ6nl3ixsWjedKuQ0FH1xg",
                 q: userEntry,
+                maxResults: 20,
                 type: "video",
-                r: 'json'
             },
 
             function (apiData) {
@@ -27,10 +27,8 @@ $(document).ready(function () {
 
     function displayResults(videoArray) {
         var createHtmlList = "";
-        //space
         $.each(videoArray, function (videoArrayKey, videoArrayValue) {
             createHtmlList += "<li>";
-            //space
             createHtmlList += "<p>" + videoArrayValue.snippet.title + "</p>";
             createHtmlList += "<a href='https://www.youtube.com/watch?v=" + videoArrayValue.id.videoId + "'>";
             //shows video thumbnail
