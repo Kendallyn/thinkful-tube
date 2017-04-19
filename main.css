@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: rgba(128, 128, 128, 0.4) url("img/abstract.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.outerBox {
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+    padding: 15px;
+    border: 5px solid silver;
+    border-radius: 25px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Handlee', cursive;
+    color: silver;
+}
+
+.outerBox form #search {
+    display: block;
+    border: 1px solid silver;
+    width: 50%;
+    margin: 2rem auto;
+    border-radius: 10px;
+    text-align: center;
+    background: transparent;
+    font-size: 20px;
+    padding: .5rem;
+    color: white;
+}
+
+input::placeholder {
+    color: white;
+}
+
+#submit {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid silver;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    border: 1px solid silver;
+    border-radius: 10px;
+    padding: .5rem;
+}
+
+.outerBox #searchResults ul {
+    margin-top: 1em;
+    list-style-type: none;
+}
+
+.outerBox #searchResults li img {
+    display: block;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.outerBox #searchResults li p {
+    border-bottom: 1px solid white;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+}
