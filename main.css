@@ -25,6 +25,7 @@ h1 {
     text-align: center;
     font-family: 'Handlee', cursive;
     color: white;
+    font-size: 45px;
 }
 
 input:focus,
@@ -44,12 +45,12 @@ button:focus {
     background: transparent;
     font-size: 20px;
     padding: .5rem;
-    color: white;
+    color: silver;
     background-color: rgba(0, 0, 0, 0.4);
 }
 
 input::placeholder {
-    color: white;
+    color: silver;
 }
 
 #submit {
@@ -90,9 +91,5 @@ input::placeholder {
     margin-top: .5rem;
     margin-bottom: .5rem;
     color: white;
-    font-size: 20px;
-}
-
-p {
-    display: block;
+    font-size: 22px;
 }
