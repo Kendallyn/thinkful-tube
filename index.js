@@ -30,7 +30,7 @@ $(document).ready(function () {
         $.each(videoArray, function (videoArrayKey, videoArrayValue) {
             createHtmlList += "<li>";
             createHtmlList += "<p>" + videoArrayValue.snippet.title + "</p>";
-            createHtmlList += "<a href='https://www.youtube.com/watch?v=" + videoArrayValue.id.videoId + "'>";
+            createHtmlList += "<a href='https://www.youtube.com/watch?v=" + videoArrayValue.id.videoId + "' target='_blank'>";
             //shows video thumbnail
             createHtmlList += "<img src='" + videoArrayValue.snippet.thumbnails.high.url + " '/>";
             createHtmlList += "</a>";
