@@ -36,7 +36,7 @@ $(document).ready(function () {
             createHtmlList += "</a>";
             createHtmlList += "</li>";
         });
-        $("#searchResults ul").append(createHtmlList);
+        $("#searchResults ul").html(createHtmlList);
         console.log(createHtmlList);
     }
 });
